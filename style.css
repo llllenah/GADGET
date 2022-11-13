@@ -86,7 +86,7 @@
     margin: 30px;
 }
 .catalogItem{
-    width: 240px;
+    width: 18%;
     display: flex;
     flex-direction: column;
 }
