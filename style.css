@@ -1,0 +1,158 @@
+.header{
+    display: flex;
+    grid-area: header;
+    background: #222222;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 50px;
+    justify-content: space-between;
+    /* align-items: baseline; */
+    padding: 15px;
+}
+.header__name{
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    
+}
+.header__name-first-part{
+    color: #FFFFFF;
+}
+.header__name-second-part{
+    color: #FF7417;
+}
+.header__cart{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FF7417;
+    
+}
+.header__purchases-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #BD1DBD;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+.main{
+    display: flex;
+    row-gap: 45px;
+    flex-direction: column;
+}
+.sort-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+    
+}
+.sort-buttons__by-product-name, .sort-buttons__by-price, .catalog-item__button{
+    box-sizing: border-box;
+    height: 40px;
+    background: #EFEFEF;
+    border: 1px solid #EEEEEE;
+}
+.sort-buttons__by-product-name, .sort-buttons__by-price{
+    width: 195px;
+}
+.catalog-item__button{
+    width: 120px;
+}
+.sort-buttons__by-product-name:hover, .sort-buttons__by-price:hover, .catalog-item__button:hover{
+    box-sizing: border-box;
+    height: 40px;
+    background: #EFEFEF;
+    border: 1px solid #A0A3AD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.catalog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 15px;
+    row-gap: 75px;
+    margin: 30px;
+}
+.catalogItem{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+}
+.catalog-item__cart-and-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.catalog-item__price{
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #222222;
+}
+
+.catalog-item__img{
+    max-width: 100%;
+    max-height: 75%;
+    align-self: center;
+}
+.catalog-item__name{
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #222222;
+}
+.footer{
+    grid-area: footer;
+    height: 90px;
+    background: #222222;
+}
+.footer__connection{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FF7417;
+
+}
+.footer__copyright{
+    margin-left: 50px;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 50px;
+
+
+    color: #FFFFFF;
+}
+.body{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    gap: 15px;
+    margin: 0;
+}
